@@ -15,7 +15,11 @@ This project aimed to train the consumption of APIs to create a fully functional
 - Success and error alerts with the <a href="https://apvarun.github.io/toastify-js/">Toastfy</a> library;
 - Axios library for API requisition;
 - Conventional commits*;
-- Responsiveness, CSS variables and dark mode;
+- Responsiveness, CSS variables and dark mode.
+
+👀 Please feel free to check my LinkedIn post about this project:
+
+<a href="https://www.linkedin.com/posts/amandacosta94_javascript-css-activity-6975791896837128193-Tput?utm_source=share&utm_medium=member_desktop"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"> </a>
 
 ##
 
@@ -62,7 +66,7 @@ npm run dev
   password: admin
 ```
 
-Github pages <a href="" target:_blank> link </a>
+Github pages <a href="https://mandacosta.github.io/Projeto_Front-end_2/" target:_blank> link </a>
 
 ##
 
