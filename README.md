@@ -1,6 +1,6 @@
 # Projeto_Front-end_2 🏁
 
-## Otimize !
+## ⚙️ Otimize !
 
 ### 🇬🇧 en
 Final project for the second module at Kenzie Academy Brasil
