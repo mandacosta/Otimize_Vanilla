@@ -1,0 +1,18 @@
+.button--primary{
+    width: fit-content;
+    height: 2.375rem;
+    padding-inline: 0.4rem;
+    background-color: var(--brand-1);
+    border: 2px solid var(--brand-1);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--WhiteFixed);
+    cursor: pointer;
+}
+
+.white-Fixed{
+    background-color: transparent;
+    border: 2px solid var(--brand-1);
+    color: var(--brand-1);
+}

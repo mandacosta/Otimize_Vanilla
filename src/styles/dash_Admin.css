@@ -1,0 +1,578 @@
+.dashAdmin{
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Setores e Empress */
+
+.setores_empresas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:1.875rem;
+    margin-top: 1.875rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.setores{
+    width:90%;
+    max-width: 691px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid var(--cardsBorder);
+    color: var(--grey0);
+    border-radius: 8px;
+    height: 25%;
+    padding: 10px;
+}
+.setores__header, .empresas__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.setores__header > h2, .empresas__header > h2{
+    margin-bottom: 0.625rem;
+}
+
+.setores_lista{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.25rem;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+
+.setores_lista > li{
+    width: 50%;
+    padding: 10px 0 10px 10px;
+    background-color: var(--grey5);
+    border-bottom: 1px solid var(--grey4);
+    margin-top: 0.1875rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.setores_lista > li:hover{
+    background-color: var(--brand-2);
+    color:var(--grey5);
+    font-weight: 700;
+}
+
+.empresas{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid var(--cardsBorder);
+    color: var(--grey0);
+    border-radius: 8px;
+    height: 70%;
+    max-height: 500px;
+    padding: 10px;
+}
+
+.empresas_pesquisa_criacao{
+    width: 95%;
+    max-width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+
+}
+
+.pesquisa{
+    width: 70%;
+    display: flex;
+}
+
+#newCiaIcon{
+    background-color: var(--brand-2);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--WhiteFixed);
+    text-align: center;
+    cursor: pointer;
+}
+
+#newCiaText{
+    display: none;
+}
+
+.empresas__lista{
+    margin-top: 1.25rem;
+    width: 100%;
+    height: calc(100% - 96px);
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.875rem;
+    overflow-y: scroll;
+}
+
+.empresas__lista > li{
+    width:100%;
+    height: fit-content;
+    min-width: 200px;
+    padding: 20px 0 20px 20px;
+    background-color: var(--grey5);
+    border: 1px solid var(--grey4);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.empresas__lista > li:hover{
+    border: 1px solid var(--brand-2);
+
+}
+
+.empresa__descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.users, .depart{
+    width: 100%;
+}
+
+.users > h3, .depart>h3{
+    margin-bottom: 0.625rem;
+}
+
+.users > ul, .depart > ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 67px;
+    overflow-y: scroll;
+
+}
+
+.users> ul > li, .depart > ul > li{
+    width: 50%;
+    padding: 10px;
+    border-bottom: 1px solid var(--grey4);;
+}
+
+/* DEPARTAMENTOS ****************************************************/
+
+.departamentos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.875rem;
+}
+
+.auxDesktopDepart{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.selecao{
+    margin-top: 1.875rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.select{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.select > label{
+    color: var(--grey0);
+    width: 100%;
+}
+
+.select > select{
+    width: 90%;
+}
+
+.select > button{
+    width: 10%;
+    padding-inline: 0;
+}
+
+.createDepart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+
+.createDepart > label {
+    color: var(--grey0);
+}
+
+.createDepart > button{
+    padding: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.departFiltrado{
+    width: 90%;
+    height: 67%;
+    border: 4px solid var(--cardsBorder);
+    color:var(--grey0);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.departLista{
+    width: 100%;
+    height: 100%;
+    overflow-y:scroll;
+    
+}
+.departLista > li{
+    width: 100%;
+    border: 1px solid var(--grey4);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 1.25rem;
+}
+
+.departLista > li:hover{
+    border: 1px solid var(--brand-2);
+}
+
+.departHeader{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.descricaoDepart > h3{
+    margin-bottom: 1.25rem;
+}
+
+.movimentacao{
+    display: flex;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.mov{
+    width: fit-content;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: transparent;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add{
+    color: green;
+    border: 1px solid green;
+}
+
+.remv{
+    font-size: 1rem;
+    color: red;
+    border: none;
+}
+
+
+.colaboradores{
+    margin-top: 1.25rem;
+}
+
+.colaboradores > h4{
+    margin-bottom: 0.625rem;
+}
+
+.colaboradores > ul{
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.colaboradores > ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--grey4);
+}
+
+.colaboradores > ul > li > .editWorker > button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.fa-pen-to-square{
+    font-size: 1.25rem;
+    margin-right: 10px;
+    color: var(--brand-1);
+    
+}
+
+.modifyDepart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0 0 0 ;
+    gap: 0.625rem;
+    cursor: pointer;
+}
+
+.fa-pen-to-square{
+    font-size: 1.25rem;
+    color: var(--textoModal);
+}
+
+.fa-trash{
+    font-size: 1.25rem;
+    color: red;
+}
+
+.infosadd{
+    position: absolute;
+    top: 40px;
+    font-weight: 300;
+}
+
+.modalHire{
+    margin-bottom: 1.25rem;
+    position: relative;
+}
+
+/* Profissionais não alocados**********************/
+
+.colabNotWorking{
+    width: 90%;
+    border: 4px solid var(--cardsBorder);
+    color: var(--grey0);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+.colabNotWorking > ul{
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.colabNotWorking > ul > li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--grey4);
+}
+
+.colabNotWorking > ul > li > button{
+    background-color: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+
+.show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition: 1s;
+}
+
+.noShow{
+    position: absolute;
+    top:0;
+    left: -100%;
+    opacity: 0;
+    transition: 1s;
+    opacity: 0;
+}
+
+
+
+@media(min-width:380px){
+
+    #newCiaIcon{
+        display: none;
+    }
+
+    #newCiaText{
+        display: block;
+        background-color: var(--brand-2);
+        border: none;
+        border-radius: 4px;
+        width: fit-content;
+        padding-inline: 8px;
+        height: 100%;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--WhiteFixed);
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+/* TOAST ****************************** */
+.toastify{
+    position: fixed;
+    height: 100px;
+    width: fit-content;
+    text-align: center;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.104);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    font-weight: 600;
+    z-index: 50;
+    
+}
+
+.toast-close{
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media(min-width:768px){
+
+    .fa-bars{
+        display: none;
+    }
+    
+    nav{
+       position: static;
+       opacity: 1;
+       background-color: transparent;
+       transition: 0;
+       display: flex;
+       width: 50%;
+       max-width: 800px;
+       align-items: center;
+        justify-content: space-evenly;
+
+        
+    }
+    
+    nav > li{
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        color: var(--WhiteFixed);
+        cursor: pointer;
+    }
+
+    /* SETORES E EMPRESAS **************************/
+
+    .setores_empresas{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        
+        
+    }
+
+    .setores{
+        height: fit-content;
+        width: 650px;
+        
+    }
+
+    .setores_lista{
+        overflow-y: auto;
+    }
+
+    .empresas{
+        max-width: 730px;
+        height: 95%;
+        max-height: 1000px;
+    }
+
+    /* DEPARTAMENTOS ************************ */
+
+    .departamentos{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+  
+    }
+
+    .auxDesktopDepart{
+        width: 50%;
+        height: 100%;
+    }
+
+    .departFiltrado{
+        height: 70%;
+
+    }
+
+    .colabNotWorking{
+        width: 46%;
+        max-width: 500px;
+        height: 93%;
+        margin-top: 0.9375rem;
+
+    }
+
+    .colabNotWorking > ul{
+        max-height: 90%;
+    }
+    
+
+}

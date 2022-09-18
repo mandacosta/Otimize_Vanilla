@@ -1,0 +1,25 @@
+.input--default{
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--WhiteFixed);
+    border: 2px solid var(--grey4);
+    border-radius: 4px;
+    padding-left: 1rem;
+    color: var(--grey3);
+
+}
+
+.input--default::placeholder{
+    color: var(--grey3);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.input--default:focus{
+    border: 3px solid var(--brand-1);
+    outline: none;
+}
+
+.input--default:valid{
+    color: var(--grey2);
+}

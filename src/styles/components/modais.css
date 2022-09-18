@@ -1,0 +1,109 @@
+/* Modal alterar dados User Normal */
+.modal{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue-opacity-1);
+    position: absolute;
+    z-index: 30;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modalForm{
+    width: 90%;
+    max-width: 500px;
+    height: fit-content;
+    padding: 30px;
+    background-color: var(--grey5);
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    border-radius: 8px;
+    position: relative;
+    
+}
+
+.modalForm__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalForm__header > h2{
+    color: var(--grey0);
+}
+
+.closeModal{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--grey4);
+    color: var(--textoModal);
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    top:0.1875rem;
+    right: 0.1875rem;
+}
+
+.modalForm > .button--primary{
+    width: 100%;
+    margin-top: 0.625rem;
+}
+
+.textoModal{
+    color: var(--textoModal);
+}
+
+.center{
+    width: 100%;
+    text-align: center;
+}
+
+.modalForm > p > span{
+    color: var(--textoModal);
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.showModal{
+    animation: showModal 1s;
+}
+
+.disappearModal {
+    animation: disappearModal 1s;
+
+}
+
+/* Adicionar essas classes no form */
+
+@keyframes showModal {
+    0%{
+        opacity:0;
+        transform: translateY(-500px);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes disappearModal {
+    0%{
+        opacity:1;
+        transform: translateY(0);
+    }
+
+    100%{
+        opacity:0;
+        transform: translateY(-800px);
+    }
+}

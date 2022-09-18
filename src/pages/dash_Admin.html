@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <script
+      src="https://kit.fontawesome.com/75ac9474d7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/components/buttons.css" />
+    <link rel="stylesheet" href="../styles/components/inputs.css" />
+    <link rel="stylesheet" href="../styles/components/modais.css" />
+    <link rel="stylesheet" href="../styles/components/header_dash.css" />
+    <link rel="stylesheet" href="../styles/dash_Admin.css" />
+
+    <title>Otimize | Admin</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1><i class="fa-solid fa-gear"></i>Otimize!</h1>
+        <div class="darkButton">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+          <p>dark-mode</p>
+        </div>
+        <nav>
+          <li id="sectCiaBtn">
+            <i class="fa fa-solid fa-building"></i> Setores e Empresas
+          </li>
+          <li id="departBtn">
+            <i class="fa fa-solid fa-building-user"></i>Departamentos
+          </li>
+          <li id="logoff">
+            <i class="fa fa-solid fa-right-from-bracket"></i>LogOff
+          </li>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+      </header>
+
+      <section class="dashAdmin">
+        <!-- Setores e Empresas -->
+
+        <div class="setores_empresas show">
+          <div class="setores">
+            <div class="setores__header">
+              <h2>Setores</h2>
+              <p>selecione um setor para filtrar as empresas</p>
+            </div>
+            <ul class="setores_lista">
+              <!-- <li><i class="fa fa-solid fa-utensils"></i> Alimentício</li>
+                        <li><i class="fa fa-solid fa-car"></i> Automotivo</li>
+                        <li><i class="fa fa-solid fa-computer"></i> TI</li>
+                        <li><i class="fa fa-solid fa-plane"></i></i> Aeroespacial</li>
+                        <li><i class="fa fa-solid fa-rug"></i>Textil</li>
+                        <li><i class="fa fa-solid fa-hand"></i>Manufatura</li>
+                        <li><i class="fa fa-solid fa-cart-shopping"></i>Atacado</li>
+                        <li><i class="fa fa-solid fa-bag-shopping"></i>Varejo</li> -->
+            </ul>
+          </div>
+
+          <div class="empresas">
+            <div class="empresas__header">
+              <h2>Empresas</h2>
+              <p>pesquise uma empresa pelo nome</p>
+            </div>
+            <div class="empresas_pesquisa_criacao">
+              <div class="pesquisa">
+                <input id="searchInput" class="input--default" type="text" />
+                <button id="searchCompany" class="button--primary">OK</button>
+              </div>
+              <button btn="newcia" id="newCiaIcon">New</button>
+              <button btn="newcia" id="newCiaText">Criar Empresa</button>
+            </div>
+            <ul class="empresas__lista">
+              <!-- <li>
+                            <div class="empresa__descricao">
+                                <h3>Nome da Empresa - slogan da empresa</h3>
+                                <p>Ínicio da jornada: 09h00</p>
+                                <p>Setor: setor</p>
+                            </div>
+                            <div class="users">
+                                <h3><i class="fa fa-solid fa-address-card"></i>Colaboradores</h3>
+                                <ul>
+                                    <li>Fulaninho - sênior</li>
+                                    <li>Fulaninho - sênior</li>
+                                    <li>Fulaninho - sênior</li>
+                                </ul>
+                            </div>
+                            <div class="depart">
+                                <h3><i class="fa fa-sharp fa-solid fa-building-user"></i>Departamentos</h3>
+                                <ul>
+                                    <li>Nome do departamento</li>
+                                    <li>Nome do departamento</li>
+                                    <li>Nome do departamento</li>
+                                </ul>
+                            </div>
+                        </li> -->
+            </ul>
+          </div>
+        </div>
+
+        <!-- Departamentos -->
+
+        <div class="departamentos noShow">
+          <div class="auxDesktopDepart">
+            <div class="selecao">
+              <div class="select selecao_setor">
+                <label>Selecione um setor</label>
+                <select class="input--default" name="" id="selectSector-Depart">
+                  <!-- <option value="">Setor 1</option>
+                                    <option value="">Setor 2</option>
+                                    <option value="">Setor 3</option> -->
+                </select>
+                <button id="selectSectorBtn" class="button--primary">OK</button>
+              </div>
+              <div class="select selecao_empresa">
+                <label>Selecione uma empresa</label>
+                <select
+                  class="input--default"
+                  name=""
+                  id="selectCompany-Depart"
+                >
+                  <!-- <option value="">empresa 1</option>
+                                    <option value="">empresa 2</option>
+                                    <option value="">empresa 3</option> -->
+                </select>
+                <button id="selectCiaBtn" class="button--primary">OK</button>
+              </div>
+              <div class="select selecao_depart">
+                <label>Selecione um departamento</label>
+                <select id="selectDepart" class="input--default" name="" id="">
+                  <!-- <option value="">depart 1</option>
+                                    <option value="">depart 2</option>
+                                    <option value="">depart 3</option> -->
+                </select>
+                <button id="selectDepartBtn" class="button--primary">OK</button>
+              </div>
+              <div class="createDepart">
+                <label for="">Ou crie um novo</label>
+                <button id="newDptBtn" class="button--primary">New</button>
+              </div>
+            </div>
+
+            <div class="departFiltrado">
+              <h2>
+                <i class="fa fa-sharp fa-solid fa-building-user"></i
+                >Departamentos
+              </h2>
+              <ul class="departLista">
+                <!-- <li>
+                                    <div class="departHeader">
+                                        <div class="descricaoDepart">
+                                            <h3>Nome</h3>
+                                            <p>Descrição do departamento</p>
+                                        </div>
+                                        <div class="movimentacao">
+                                            <button class="mov add"><i class="fa-sharp fa-solid fa-user-plus"></i> Contratar</button>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="colaboradores">
+                                        <h4><i class="fa fa-solid fa-address-card"></i> Colaboradores</h4>
+                                        <ul>
+                                            <li>
+                                                <p>Fulano da Silva - Junior - Hibrido</p>
+                                                <div class="editWorker">
+                                                    <button><i class="fa-solid fa-file-pen"></i></button>
+                                                <button class="mov remv"><i class="fa-solid fa-user-minus"></i></button>
+                                                </div>
+                                            </li>
+
+
+        
+                                        </ul>
+                                    </div>
+
+                                    <div class="modifyDepart">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </div>
+                                </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="colabNotWorking">
+            <h3><i class="fa fa-solid fa-clock"></i>Pessoal não alocado</h3>
+            <ul class="unemployedList">
+              <!-- <li>
+                                <p>Fulano de tal - pleno</p>
+                                <button><i class="fa fa-solid fa-user-slash"></i> Remover </button>
+                            </li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../scripts/dash_userAdmin.js"></script>
+  </body>
+</html>

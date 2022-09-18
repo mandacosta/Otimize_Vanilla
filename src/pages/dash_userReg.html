@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/75ac9474d7.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/components/buttons.css" />
+    <link rel="stylesheet" href="../styles/components/inputs.css" />
+    <link rel="stylesheet" href="../styles/components/modais.css" />
+    <link rel="stylesheet" href="../styles/components/header_dash.css" />
+    <link rel="stylesheet" href="../styles/dash_userReg.css" />
+
+    <title>Otimize | HomePage</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1><i class="fa-solid fa-gear"></i>Otimize!</h1>
+        <div class="darkButton">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+          <p>dark-mode</p>
+        </div>
+        <nav>
+          <li id="dadosUser">
+            <i class="fa fa-regular fa-user"></i>Atualizar dados
+          </li>
+          <li id="logoff">
+            <i class="fa fa-solid fa-right-from-bracket"></i>LogOff
+          </li>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+      </header>
+
+      <section class="dashUser">
+        <!-- <div class="dashWorking">
+                <div class="empresa">
+                    <h2>Nome da empresa grandão</h2>
+                    <p>Slogan dela mais embaixo aqui</p>
+    
+                </div>
+                <div class="personalData">
+                    <h2>Meus dados <i class="fa-solid fa-id-badge"></i></h2>
+                    <ul>
+                        <li><p>Nome</p><p>Amanda Costa</p></li>
+                        <li><p>Email</p><p>mandacosta94@gmail.com</p></li>
+                        <li><p>Regime</p><p>Home Office</p></li>
+                        <li><p>Experiência</p><p>Júnior</p></li>  
+                        <li><p>Departamento</p><p>Marketing</p></li>                            
+                    </ul>
+                </div>
+                <div class="aux-desktop">
+                    
+                    <div class="coWorkers">
+                        <h2>Colegas <i class="fa-solid fa-people-group"></i></h2>
+                        <ul>
+        
+                            <li><i class="fa-solid fa-address-card"></i> Fulaninho - sênior</li>
+                            <li><i class="fa-solid fa-address-card"></i> Fulaninho - sênior</li>
+                            <li><i class="fa-solid fa-address-card"></i> Fulaninho - sênior</li>
+                            <li><i class="fa-solid fa-address-card"></i> Fulaninho - sênior</li>
+                            <li><i class="fa-solid fa-address-card"></i> Fulaninho - sênior</li>
+                            
+                        </ul>
+                    </div>
+        
+                    <div class="departamentos">
+                        <h2>Departamentos<i class="fa-sharp fa-solid fa-building"></i></h2>
+                        <ul>
+        
+                            <li><i class="fa-sharp fa-solid fa-building-user"></i> Nome do departamento</li>
+                            <li><i class="fa-sharp fa-solid fa-building-user"></i> Nome do departamento</li>
+                            <li><i class="fa-sharp fa-solid fa-building-user"></i> Nome do departamento</li>
+                            <li><i class="fa-sharp fa-solid fa-building-user"></i> Nome do departamento</li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- <div class="notWorking">
+                <h2>Olá, Fulano! Parece que você ainda não foi alocado. Caso necessário altere seus dados no menu acima</h2>
+                <img src="../img/buildingContent.svg" alt="">
+            </div> -->
+      </section>
+
+      <!-- <div class="modal">
+            <form action="" class="modalForm">
+                <div class="modalForm__header">
+                    <h2>Alterar dados</h2>
+                    <button id="closeModal"class="closeModal">X</button>
+                </div>                
+                <label class= "textoModal" for="">nome</label>
+                <input class="input--default" type="text" placeholder="Seu novo nome de usuário...">
+                <label class= "textoModal" for="">email</label>
+                <input class="input--default"  type="email" placeholder="Seu novo e-mail">
+                <button id="Enviar" class="button--primary " type="submit">Enviar</button>
+                
+                
+            </form>
+            
+        </div> -->
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../scripts/dash_userReg.js"></script>
+  </body>
+</html>

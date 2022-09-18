@@ -1,0 +1,225 @@
+body{
+    background-color: var(--grey5);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo{
+    width: 100%;
+    height: fit-content;
+    background-color: var(--brand-1);
+    padding: 0 30px 55px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+    position: relative;
+    
+}
+
+.logo > img{
+    width: 300px;
+}
+
+.logo > .darkButton{
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    position: absolute;
+    top:0.625rem;
+    left: 0.3125rem;
+    color: var(--darkButton);
+    cursor: pointer;
+}
+
+.logo > h1{
+    color: var(--WhiteFixed);
+}
+
+.logo > p{
+    text-align: center;
+    color: var(--WhiteFixed);
+}
+
+.mediaWraper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--grey5);
+}
+
+.companiesDisplay{
+    width: 90%;
+    max-width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.104);
+    background-color: var(--grey4);
+    padding: 20px;
+    transform: translateY(-30px);
+}
+
+.companiesDisplay > h2{
+    font-size: 1.125rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--grey0);
+    
+}
+
+.filter{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.filter > select{
+    color: var(--grey0);
+}
+
+.filter > button{
+    color: var(--WhiteFixed);
+}
+
+.companiesList{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.600rem;
+    
+}
+
+.companiesList > li{
+    width: fit-content;
+    min-width: 180px;
+    height: 170px;
+    padding: 20px 10px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--textoModal);
+    white-space: nowrap;
+    color: var(--grey0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    
+}
+
+li img{
+    width: 150px;
+}
+
+.companiesList > li > p{
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: center;
+    color: var(--textoModal);
+    white-space: normal;
+}
+
+.fa{
+    font-size: 3.125rem;
+    margin-top: 1.25rem;
+    color: var(--textoModal);
+}
+
+
+.handleModal{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.handleModal > h3{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.25rem;
+    color: var(--grey0);
+}
+
+.divLogin, .divCadastro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.divLogin > span, .divCadastro>span{
+    width: 90%;
+    display: block;
+    height: fit-content;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.divLogin > p, .divCadastro>p{
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--grey0);
+}
+
+.textoModalIndex{
+    color: var(--textoModal);
+}
+
+.noShow{
+    top:-100%;
+  
+    
+}
+
+@media(min-width: 768px){
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--grey5);
+    }
+
+    main{
+        width: 90%;
+        max-width: 1200px;
+        flex-direction: row;
+        height: 70%;
+        border-radius: 8px;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.104);
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .mediaWraper{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        
+    }
+
+}

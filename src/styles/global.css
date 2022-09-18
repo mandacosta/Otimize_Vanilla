@@ -1,0 +1,36 @@
+:root{
+
+    --brand-1: #326a7d;
+    --brand-2: #4fa8c6;
+    --brand-3: #EDF2FF;
+    --grey0: #191e22;
+    --grey1: #212529;
+    --grey2: #495057;
+    --grey3: #868E96;
+    --grey4: #eeeeee;
+    --grey5: #f8f9fa; 
+    --blue-opacity-1: rgba(85, 109, 132, 0.5);
+    --WhiteFixed: #FFFFFF;
+    --darkButton: #ffffff;
+    --textoModal: #495057;
+    --cardsBorder: #eeeeee;
+}
+
+.darkMode:root{
+    
+    --brand-1: #326a7d;
+    --brand-2: #4fa8c66f;
+    --brand-3: #EDF2FF;
+    --grey0: #f7f7f7;
+    --grey1: #212529;
+    --grey2: #495057;
+    --grey3: #868E96;
+    --grey4: #636363;
+    --grey5: #000000;
+    --blue-opacity-1: rgba(85, 109, 132, 0.5);
+    --WhiteFixed: #ffffff;
+    --darkButton: #fff42a;
+    --textoModal: #4fcaf3;
+    --cardsBorder:#326a7d;
+
+} 
